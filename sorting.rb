@@ -9,7 +9,7 @@ numbers.length.times do |x|
 				numbers[y] = temp
 			end
 		end
-		if numbers[x].class == Fixnum && numbers[y].class == Fixnum
+		if numbers[x].class <= Integer && numbers[y].class <= Integer
 			if numbers[x] < numbers[y]
 				temp = numbers[x]
 				numbers[x] = numbers[y]
