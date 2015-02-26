@@ -1,4 +1,4 @@
-numbers = [4,2,5,7,8,1,3, 'bsdkjv',7, 'asfd', 'asekf', 6,'csdjkfn', 5]
+numbers = [4,2,5,7,8,1,3, 'bsdkjv',7, 'asfd', 'asekf', 6,'csdjkfn', 5, 5.3]
 
 numbers.length.times do |x|
   numbers.length.times do |y|
@@ -9,7 +9,7 @@ numbers.length.times do |x|
         numbers[y] = temp
       end
     end
-    if numbers[x].class <= Integer && numbers[y].class <= Integer
+    if (numbers[x].class <= Integer || numbers[x].class <= Float) && (numbers[y].class <= Integer || numbers[x].class <= Float)
       if numbers[x] < numbers[y]
         temp = numbers[x]
         numbers[x] = numbers[y]
