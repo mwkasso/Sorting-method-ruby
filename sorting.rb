@@ -1,4 +1,5 @@
-numbers = [4,2,5,7,8,1,3, 'bsdkjv',7, 'asfd', 'asekf', 6,'csdjkfn', 5, 5.3]
+v =10
+numbers = [4,2,5,7,8,1,3, 'bsdkjv',7, 'asfd', 'asekf', 6,'csdjkfn', 5, 5.3, v]
 
 numbers.length.times do |x|
   numbers.length.times do |y|
